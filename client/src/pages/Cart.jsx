@@ -200,7 +200,7 @@ const Cart = () => {
       {/* Buttons */}
       {cartData.length > 0 && (
         <div className="flex justify-end gap-4 mt-6">
-          <button className="border border-black px-6 py-2 rounded hover:bg-gray-100 transition">
+          <button className="border border-black px-6 py-2 rounded hover:bg-gray-100 transition" onClick={()=>navigate('/collection')}>
             Continue Shopping
           </button>
           <button className="bg-black text-white px-6 py-2 rounded hover:bg-gray-800 transition" onClick={()=>navigate('/place-order')}>
@@ -213,3 +213,4 @@ const Cart = () => {
 };
 
 export default Cart;
+
