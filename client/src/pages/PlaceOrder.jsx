@@ -232,7 +232,7 @@ const PlaceOrder = () => {
           </h2>
 
           <div className="flex gap-4">
-            {["Stripe", "Razorpay", "COD"].map((item) => (
+            {["Stripe", "COD"].map((item) => (
               <button
                 key={item}
                 onClick={() => setMethod(item)}
